@@ -1,0 +1,354 @@
+<!---- RECRUITER  LOG INNNNNNNN  PAGEEE-------------->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  {% load static %}
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>  </title>
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+
+
+
+.col1{                   /****** only for image****/
+      margin:5px;
+      padding:4px; 
+    display:inline-block; 
+
+}
+
+
+
+.span{                   /*****online job****/
+    font-weight:bold;
+    font-size:25px;
+    font-family:Felix Titling;
+    margin: 50px;
+    padding-top:30px;
+    display:inline-block;
+    text-align:center;
+    width:400px;
+    
+  
+
+}
+
+.col3{           /***** for icons****/
+    margin:5px;
+    padding-left:10px;      
+    font-weight:bold;
+    font-size:30px;
+    padding: 4px;
+    display:inline-block;
+    width:200px;
+    
+ 
+}
+
+/**** navigation bar***/
+.navbar{
+    background-image:linear-gradient(to left, #a445b2, blue,cyan );
+    
+}
+.navbrand{
+    color:white;
+    font-weight:bolder;
+    font-family:Monotype Corsiva;
+    font-size:30px;
+    padding:4px;
+    margin:6px;
+
+
+}
+
+.navlink{
+
+    color:white;
+    font-style:normal;
+  
+}
+
+.navitem{
+    margin-right:40px;
+    color:white;
+    font-style:normal;
+  
+}
+
+
+.navlink:hover{
+    margin-right:4px;
+    color:yellow;
+    font-weight:bold;
+    font-style:normal;
+    background-color:red;
+    border-radius:5px;
+
+}
+.navbrand:hover{
+    color:yellow;
+}
+
+/**** for  students pictures******/
+.containerstudents{
+    background-color:chocolate;
+    height:650px;
+    
+}
+
+.heading1{
+    text-align:center;
+    color: black;
+    font-family:Monotype Corsiva;
+    font-weight:bold;
+    font-size :60px;
+}
+
+.student{
+    margin-top:1%;
+    border-radius:50%;
+    margin-right:3%;
+    padding:8%;  
+
+   
+}
+
+.content{
+    text-align:center;
+    font-family:bold;
+    font-size:20px;
+    position:absolute;
+    height:30px;
+    width:91%;
+    color:white;
+}
+
+/***** *******************styling for ADMIN PAGE********************/
+.marquee1{
+    margin-top:1%;
+    color:blue;
+    font-family: Monotype Corsiva;
+    font-size:25px;
+    background-color:rgb(0, 251, 255);
+    font-weight:bold;
+}
+
+/**** form******/
+.form1{
+    margin-top:5%;
+    max-width:90%;
+
+}
+
+/*** for button****/
+.btn-primary{
+    margin-top:2%;
+    color:white;
+    background-color:blue;
+    height:40px;
+    
+}
+
+
+/*********************  STYLING   USER PAGE*******************/
+
+.marquee2{
+    margin-top:1%;
+    color:white;
+    font-family: Monotype Corsiva;
+    font-size:25px;
+    background-color:blueviolet;
+    font-weight:bold;
+}
+
+/****************** STYLING RECRUITER PAGE**************/
+
+.marquee3{
+    margin-top:1%;
+    color:red;
+    font-family: Monotype Corsiva;
+    font-size:25px;
+    background-color:yellow;
+    font-weight:bold;
+}
+
+/************************ FOOTER****************/
+
+.footer1{
+    background-color:black;
+    width:100%;
+    height:400px;
+    margin-top :3px;
+}
+
+.my{
+    color:white;
+    
+   
+}
+.row1{
+    display:flex;
+
+}
+
+.col{
+    text-align:justify; 
+
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+          
+                <span class="col1">
+                <img src="https://5.imimg.com/data5/GS/LX/RK/SELLER-28915298/job-portal-service-500x500.jpg"  width="400px"  height="190px">
+                </span>
+                
+                
+                <div class="col2 ">
+                    <span  class="span">
+                        <span style="color:red">Online Job </span>
+                        <span style="color:green"> Portal System</span>
+                    </span>
+
+
+                    <div class="col3">
+                        <span style="color:blue"><i class="fa fa-twitter "></i></span>
+                        <span style="color:rgb(197, 42, 182)"><i class="fa fa-facebook "></i></span>
+                        <span style="color:cyan"><i class="fa fa-linkedin "></i></span>
+                        <span style="color:rgb(210, 44, 72)"><i class="fa fa-instagram"></i></span>
+                        <span style="color:rgb(100, 100, 225) "><i class="fa fa-telegram "></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class=" navbar navbar-expand-sm">
+         <a class="navbrand"> Job Portal</a>
+         <ul class="nav">
+            <li class="navitem"> <a class="navlink" href="/training1/ " style="margin-left:280px"><i class="fa fa-home margin-right:2px"></i>Home</a></li>
+            <li class="navitem"> <a class="navlink" href="#" ><i class="fa fa-users"></i>Latest Jobs</a></li>
+            <li class="navitem"> <a class="navlink" href="/trainuser/"><i class="fa fa-user-plus"></i> User Login</a></li>
+            <li class="navitem"> <a class="navlink" href="/trainrecruiter/"><i class="fa fa-sign-language"></i>Recruiter Login</a></li>
+            <li class="navitem"> <a class="navlink" href="/trainadmin/"> <i class="fa fa-sign-in "></i>Admin Login</a></li>
+            <li class="navitem"> <a class="navlink" href="#"><i class="bi bi-telephone"></i>Contact Us</a></li>
+         </ul>
+        </nav>
+
+        <marquee class="marquee3">   RECRUITER&nbsp; &nbsp;LOGIN   </marquee>
+
+        <!--- creating user form---------->
+        <form class="form1"  method="post" >
+            {% csrf_token %}
+            <label><b>Email Id:</b></label><br>
+            <input type="text"  class="formcontrol" name="uname" placeholder="Enter Email Id" size="197">
+        <br> <br>
+
+            
+            <label><b>Password:</b></label><br>
+            <input type="pasword"  class="formcontrol" name="pwd" placeholder="Enter Password" size="197">
+              
+             <br><br>
+
+            <input type="submit" class="btn btn-primary">
+            <a href="/recsignup/"  class="btn btn-primary "> CREATE AN ACCOUNT</a>
+           
+
+
+
+        </form>
+
+        <!--- footer-->
+        <div class="mt-3" style="background-color:black; width:100%;height:350px;">
+            <div class="footer1">
+            <div class="row1">
+                <div class="col-md-4 mt-3">
+                    <h3  class="my"> Contact Information </h3>
+                    
+                    <p style="color:yellow;  font-size:18px">&nbsp; <i class="fa fa-map-marker text-danger"></i>&nbsp;  RT Nagar, Bangalore-560032 </p>
+                    <p style="color:yellow;  font-size:18px"> &nbsp;<i class="fa fa-envelope text-danger "></i> &nbsp; abc586@gmail.com</p>
+                    <p style="color:yellow;  font-size:18px"> &nbsp;<i class="fa fa-mobile text-danger "></i> &nbsp;+91 8602768 / +91 9229465037 </p>
+                    <p style="color:yellow;  font-size:18px"> &nbsp;<i class="fa  fa-globe text-danger"></i>&nbsp; &nbsp;www.jobportals.com</p>
+                
+                </div>
+                
+                <div class="col-md-4 mt-3">      <!--- this is by using bootstrap-->
+                  <h3 class="my" >Online Placement</h3> 
+                  <p style="color:yellow;  font-size:14px ;text-align:left; width:25%"> 
+                    An employment website is a website that deals specially with employment or careers.My employment websites are designed to allow employers to post job requirements for a position to be filled and are commonly known as job boards.
+                  </p>       
+        </div>
+        <div class="col-md-4 mt-3">
+            <h3 class="my"> NewsLetter</h3>
+            <p style="color:yellow;  font-size:18px ;text-align:left; width:25%"> 
+            If You Want Any Extra Information Then Send Your Email Id.
+            </p>
+            <form method="post" class="form-inline" > <!-- form inline tells ki  sab kuch ek hi line mei a jaye button bhi -->
+                <input type="email" name="emailid" placeholder="Enter Email Id" required class="form-control  mr-4" >  <!--- required means thi is mandatory to fill--><!-- form control class means full width lele-->  <!-- mr means margin right in bootstrap use kiyaa  -->
+                
+                 <input type="submit" value="Send"  class="btn btn-secondary"> <!-- this btn btn primary n seconadry are classs of button u can use any -->
+    
+            </form>
+    
+    
+        </div>
+    
+            </div>
+            </div>
+            </div>
+
+            <!--- this is for checking error in  RECRUITER login -->
+            {% if error == "no"  %}
+            <script>
+                alert("Login Successfull");
+                window.location=("/rechome/")
+            </script>
+            {% endif %}
+
+            {% if error == "yes" %}
+            <script>
+                alert("Invalid Login Credentials,Try Again.....");  
+            </script>
+              {% endif %}
+
+
+              {% if error == "not" %}
+              <script>
+                  alert("Your Login Status is pending...... ");   
+              </script>
+                {% endif %}
+  
+                
+
+
+
+
+            
+            
+            
+    
+                 
+    
+        
+

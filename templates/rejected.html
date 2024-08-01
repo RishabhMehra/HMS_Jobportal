@@ -1,0 +1,339 @@
+<!----- rejected     recruiterssss-->
+
+
+
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+   
+
+   {% load static %}
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>   </title>
+   <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+
+.col1{                   /****** only for image****/
+  margin:5px;
+  padding:4px; 
+display:inline-block; 
+
+}
+
+.span{                   /*****online job****/
+font-weight:bold;
+font-size:25px;
+font-family:Felix Titling;
+margin: 50px;
+padding-top:30px;
+display:inline-block;
+text-align:center;
+width:400px;
+}
+
+.col3{           /***** for icons****/
+margin:5px;
+padding-left:10px;      
+font-weight:bold;
+font-size:30px;
+padding: 4px;
+display:inline-block;
+width:200px;
+}
+
+/**** navigation bar***/
+.navbar{
+background-image:linear-gradient(to left, #a445b2, blue,cyan );
+}
+
+
+.navbrand{
+color:white;
+font-weight:bolder;
+font-family:Monotype Corsiva;
+font-size:30px;
+padding:4px;
+margin:6px;
+}
+
+
+.navlink{
+color:white;
+font-style:normal;
+}
+
+.navitem{
+margin-right:40px;
+color:white;
+font-style:normal;
+}
+
+.navlink:hover{
+margin-right:4px;
+color:yellow;
+font-weight:bold;
+font-style:normal;
+background-color:red;
+border-radius:5px;
+}
+
+
+.navbrand:hover{
+color:yellow;
+}
+
+/**** for  students pictures******/
+.containerstudents{
+background-color:chocolate;
+height:650px;
+
+}
+
+.heading1{
+text-align:center;
+color: black;
+font-family:Monotype Corsiva;
+font-weight:bold;
+font-size :60px;
+}
+
+.student{
+margin-top:1%;
+border-radius:50%;
+margin-right:3%;
+padding:8%;  
+}
+
+.content{
+text-align:center;
+font-family:bold;
+font-size:20px;
+position:absolute;
+height:30px;
+width:91%;
+color:white;
+}
+
+/***** *******************styling for ADMIN PAGE********************/
+.marquee1{
+margin-top:1%;
+color:blue;
+font-family: Monotype Corsiva;
+font-size:25px;
+background-color:rgb(0, 251, 255);
+font-weight:bold;
+}
+
+/**** form******/
+.form1{
+margin-top:5%;
+max-width:90%;
+
+}
+
+/*** for button****/
+.btn-primary{
+margin-top:2%;
+color:white;
+background-color:blue;
+height:40px;
+
+}
+
+
+/*********************  STYLING   USER PAGE*******************/
+
+.marquee2{
+margin-top:1%;
+color:white;
+font-family: Monotype Corsiva;
+font-size:25px;
+background-color:blueviolet;
+font-weight:bold;
+}
+
+/****************** STYLING RECRUITER PAGE**************/
+
+.marquee3{
+margin-top:1%;
+color:red;
+font-family: Monotype Corsiva;
+font-size:25px;
+background-color:yellow;
+font-weight:bold;
+}
+
+/************************ FOOTER****************/
+
+.footer1{
+background-color:black;
+width:100%;
+height:400px;
+margin-top :3px;
+}
+
+.my{
+color:white;
+
+
+}
+.row1{
+display:flex;
+
+}
+
+.col{
+text-align:justify; 
+
+}
+</style>
+
+
+
+<!-------- data table start -->
+<script>         //humne  import kiya hai  for table  ke format mein sara data aye ///
+
+    $(document).ready(function() {
+    $('#example').DataTable({
+        dom: 'Bfrtip',
+        buttons: [
+            'copy', 'csv', 'excel', 'pdf', 'print'
+        ]
+    });
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
+<script src="https://cdn.datatables.net/buttons/3.0.2/js/dataTables.buttons.js" ></script>
+<script src="https://cdn.datatables.net/buttons/3.0.2/js/buttons.dataTables.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+<script src="https://cdn.datatables.net/buttons/3.0.2/js/buttons.html5.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css">
+<linl rel="stylesheet" href="https://cdn.datatables.net/buttons/3.0.2/css/buttons.dataTables.css">
+
+
+<!----- data table end -->
+ </head>
+
+
+
+
+
+
+ <body>
+ <!-------- THIS IS NAVIGATION BAR FOR USER -->
+     <div class="container">
+         <div class="row">
+           
+                 <span class="col1">
+                 <img src="https://5.imimg.com/data5/GS/LX/RK/SELLER-28915298/job-portal-service-500x500.jpg" width="400px"  height="190px">
+                 </span>
+                 
+                 
+                 <div class="col2 ">
+                     <span  class="span">
+                         <span style="color:red">Online Job </span>
+                         <span style="color:green"> Portal System</span>
+                     </span>
+ 
+ 
+                     <div class="col3">
+                        <span style="color:blue"><i class="fa fa-twitter "></i></span>
+                        <span style="color:rgb(197, 42, 182)"><i class="fa fa-facebook "></i></span>
+                        <span style="color:cyan"><i class="fa fa-linkedin "></i></span>
+                        <span style="color:rgb(210, 44, 72)"><i class="fa fa-instagram"></i></span>
+                        <span style="color:rgb(100, 100, 225) "><i class="fa fa-telegram "></i></span>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <nav class=" navbar navbar-expand-sm">
+            <a class="navbrand"> Job Portal</a>
+            <ul class="nav">
+                <li class="navitem"> <a class="navlink" href="/adminhome/" style="margin-left:280px"><i class="fa fa-home margin-right:2px"></i>Home</a></li>
+                <li class="navitem dropdown"> <a class="navlink dropdown-toggle" href="#" data-toggle="dropdown"><i class="fa fa-users"></i> Recruiters </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/pending/">Pending</a>
+                    <a class="dropdown-item" href="/accepted/">Accepted</a>
+                    <a class="dropdown-item" href="/rejected/">Rejected</a>
+                    <a class="dropdown-item" href="/allrecruiters/">All Recruiters</a>
+                </div>
+                </li>
+
+              
+                <li class="navitem"> <a class="navlink" href="/viewusers/" ><i class="fa fa-user-o"></i> View Users</a></li>
+                <li class="navitem"> <a class="navlink" href="#"><i class="fa fa-user-circle"></i> Change Password </a></li>
+                <li class="navitem"> <a class="navlink" href="/Logout/"><i class="fa fa-sign-out"></i></a> Log Out</li>
+            
+            </ul>
+           </nav>
+
+
+           
+
+
+   
+   
+         <marquee class="marquee2">   REJECTED &nbsp;&nbsp;RECRUITERS </marquee>      
+  
+         <div class="container">    <!--- this is container class yeh khud se margin le aati hai -->
+          <table class="table table-hover" id="example">  <!--- yeh id example bhi import kiya haina table uske liye-->
+             <thead>
+             <tr style="background-color:chocolate" >
+                <th> S.No.</th>
+                <th> Full Name</th>
+                <th> Email Id</th>
+                <th> Contact</th>
+                <th> Gender</th>
+                <th> Company</th>
+                <th> Image</th>
+                <th> Status</th>
+                <th> Action</th>   <!--- this is delete ya ready ka option -->
+                            
+             </tr>
+         </thead>
+        
+             <!-- this is will be body of table-->
+              <tbody>
+                 {% for i in data %}
+             <tr style="background-color:#DEB887">
+                 <td>{{forloop.counter}}</td> 
+                 <td>{{i.user.firstname}} {{i.user.lastname}}</td> 
+                 <td>{{i.user.username}}</td> 
+                 <td>{{i.mobile}}</td> 
+                 <td>{{i.gender}}</td> 
+                 <td>{{i.company}}</td>
+                 <td><img src="{{i.image.url}}" style="width:100px; height:100px; border-radius:50%"></td> 
+                 <td>{{i.status}}</td>
+                 <td><a href="/change_status/ i.id " class="btn btn-success btn-sm" >Change Status</a></td>   
+             
+        
+            
+            
+             </tr>
+             {% endfor %}
+             </tbody>
+          </table>
+          </div>
+ 
+ 
+ 
+ 
+     
+ </body>
+ </html>
