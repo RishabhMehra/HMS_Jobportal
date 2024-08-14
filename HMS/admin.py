@@ -10,4 +10,4 @@ admin.site.register(StudentUser)
 # this is recruiter model
 admin.site.register(Recruiter)
 
-# this is admin model
+

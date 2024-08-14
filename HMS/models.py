@@ -35,7 +35,29 @@ class Recruiter(models.Model):
     type = models.CharField(max_length=15, null=True)
     status = models.CharField(
         max_length=15, null=True
-    )  # jab tak admin accept na kre tab tak pending aaye status
+    )  
 
     def _str_(self):
         return self.user.username
+    
+
+# this is
+class Job(models.Model):
+    recruiter = models.ForeignKey(
+        Recruiter, on_delete=models.CASCADE
+    )  # cascade means child se bhi delete ho jaye
+    startdate = models.DateField()  # null true means it is not neccesary to fill data
+    enddate = models.DateField()
+    title = models.CharField(max_length=100)
+    salary = models.FloatField(max_length=20)
+    image = models.FileField()
+    description = models.CharField(max_length=300) 
+    experience = models.CharField(max_length=50) 
+    location = models.CharField(max_length=100) 
+    skills = models.CharField(max_length=100) 
+    creationdate = models.DateField() 
+
+
+    def _str_(self):
+        return self.title
+

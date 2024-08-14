@@ -1,7 +1,14 @@
+
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
+}
+/****** for large image****/
+.fluid{
+    background-color:white;
+
 }
 
 
@@ -12,6 +19,8 @@
       margin:5px;
       padding:4px; 
     display:inline-block; 
+
+    
 
 }
 
@@ -45,11 +54,11 @@
 
 /**** navigation bar***/
 .navbar{
-    background-color:#DC143C;
+    background-image:linear-gradient(to left, #a445b2, blue,cyan );
     
 }
 .navbrand{
-    color:white;
+    color:rgb(223, 39, 39);
     font-weight:bolder;
     font-family:Monotype Corsiva;
     font-size:30px;
@@ -61,7 +70,7 @@
 
 .navlink{
 
-    color:white;
+    color:yellow;
     font-style:normal;
   
 }
@@ -89,14 +98,14 @@
 
 /**** for  students pictures******/
 .containerstudents{
-    background-color:chocolate;
+    background-image:linear-gradient(to left,white ,white);
     height:650px;
     
 }
 
 .heading1{
     text-align:center;
-    color: black;
+    color: rgb(21, 104, 220);
     font-family:Monotype Corsiva;
     font-weight:bold;
     font-size :60px;
@@ -118,7 +127,7 @@
     position:absolute;
     height:30px;
     width:91%;
-    color:white;
+    color:#a445b2;
 }
 
 /***** *******************styling for ADMIN PAGE********************/
@@ -155,7 +164,7 @@
     color:white;
     font-family: Monotype Corsiva;
     font-size:25px;
-    background-color:blueviolet;
+    background-color:rgb(8, 25, 76);
     font-weight:bold;
 }
 
@@ -173,7 +182,7 @@
 /************************ FOOTER****************/
 
 .footer1{
-    background-color:black;
+    background-image:linear-gradient(to left, #a445b2, blue,cyan );
     width:100%;
     height:400px;
     margin-top :3px;
@@ -193,8 +202,8 @@
     text-align:justify; 
 
 }
-
-
-
-
+.btn{
+    background-color:yellow;
+    color:red;
+}
 

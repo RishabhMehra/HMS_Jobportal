@@ -102,7 +102,7 @@ def recsignup(request):
         company = request.POST["company"]
         try:
             user = User.objects.create_user(
-                firstname=f, lastname=l, password=p, username=e
+                password=p, username=e
             )
             Recruiter.objects.create(
                 user=user,
@@ -114,8 +114,9 @@ def recsignup(request):
                 status="pending",
             )
             error = "no"
-        except:
+        except Exception as e:
             error = "yes"
+            print(e)
     d = {"error": error}
     return render(request, "recsignup.html", d)
 
@@ -138,7 +139,7 @@ def userhome(request):
 
 def Logout(request):
     logout(request)
-    return redirect("training.html")
+    return redirect("/training/")
 
 
 def usersignup(request):
@@ -182,11 +183,13 @@ def delete_user(request, pid):
         not request.user.is_authenticated
     ):  # this to check user khi aise to nhi aa gya without beung registered
         return redirect("/trainadmin/")
-    student = User.objects.get(id=pid)  # same neeche jaisa
+    student = User.objects.get(
+        id=pid
+        )  # same neeche jaisa
     student.delete()
-    return redirect("viewusers.html")
+    return redirect("/viewusers/")
 
-
+ 
 def delete_recruiter(request, pid):
     if (
         not request.user.is_authenticated
@@ -196,7 +199,7 @@ def delete_recruiter(request, pid):
         id=pid
     )  # imp we have not delete from recruiter main model bcoz vo sirf vha se del krega isliye hmne user se kiya del har jagah se del hoga
     recruiter.delete()
-    return redirect("allrecruiters.html")
+    return redirect("/allrecruiters/")
 
 
 def pending(request):
@@ -210,11 +213,11 @@ def pending(request):
     return render(request, "pending.html", d)
 
 
-def change_status(request, pid):
-    if (
+def changestatus(request, pid):
+    if(
         not request.user.is_authenticated
-    ):  # this to check user khi aise to nhi aa gya without beung registered
-        return redirect("/trainadmin/")
+    ):
+      return redirect("/trainadmin/")                   # this to check user khi aise to nhi aa gya without beung registered                                                              
     error = ""
     recruiter = Recruiter.objects.get(id=pid)
     if request.method == "POST":
@@ -227,6 +230,7 @@ def change_status(request, pid):
             error = "yes"
     d = {"recruiter": recruiter, "error": error}
     return render(request, "changestatus.html", d)
+
 
 
 def accepted(request):

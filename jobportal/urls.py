@@ -28,24 +28,39 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("", views.training),
     path("trainadmin/", views.trainadmin),
+    path("adminhome/", views.adminhome),
+
+
     path("trainuser/", views.trainuser),
-    path("trainrecruiter/", views.trainrecruiter),
-    path("recsignup/", views.recsignup),
     path("usersignup/", views.usersignup),
     path("userhome/", views.userhome),
-    path("rechome/", views.rechome),
-    path("adminhome/", views.adminhome),
-    path("Logout/", views.Logout),
     path("viewusers/", views.viewusers),
-    path("pending/", views.pending),
     path("delete_user/<int:pid>/", views.delete_user),
+
+
+    path("trainrecruiter/", views.trainrecruiter),
+    path("recsignup/", views.recsignup),
+    path("rechome/", views.rechome),
     path("delete_recruiter/<int:pid>/", views.delete_recruiter),
-    path("change_status/<int:pid>/", views.change_status),
+    path("pending/", views.pending),
     path("accepted/", views.accepted),
     path("rejected/", views.rejected),
     path("allrecruiters/", views.allrecruiters),
+
+
+  
+    path("Logout/", views.Logout),
+    path("changestatus/<int:pid>/", views.changestatus),
+
+
+   
     path("passadmin/", views.passadmin),
     path("passuser/", views.passuser),
     path("passrec/", views.passrec),
+
+
+
     path("addjobrec/", views.addjobrec),
+
+
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
